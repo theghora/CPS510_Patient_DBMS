@@ -5,7 +5,8 @@
 # Patient Record and Information Management Database GUI
 
 Welcome to the Patient Record and Information Management Database GUI.
-This application provides a user-friendly interface to interact with your database, enabling various functions for data management and analysis.
+This application provides a user-friendly interface to interact with your database,
+ enabling various functions for data management and analysis.
 
 ## Table of Contents
 
