@@ -4,7 +4,8 @@
 ```markdown
 # Patient Record and Information Management Database GUI
 
-Welcome to the Patient Record and Information Management Database GUI. This application provides a user-friendly interface to interact with your database, enabling various functions for data management and analysis.
+Welcome to the Patient Record and Information Management Database GUI.
+This application provides a user-friendly interface to interact with your database, enabling various functions for data management and analysis.
 
 ## Table of Contents
 
@@ -28,9 +29,8 @@ Welcome to the Patient Record and Information Management Database GUI. This appl
 
 ### Accessing the GUI
 
-To access the application, visit [Patient Record and Information Management System](https://apex.oracle.com/pls/apex/r/patient_record_information_managment_system/patient/home?session=12571611959982).
-
-## Usage
+To access the application, visit
+https://apex.oracle.com/pls/apex/r/patient_record_information_managment_system/patient/home?session=12571611959982
 
 ### Signing In
 
