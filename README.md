@@ -49,7 +49,8 @@ To access the application, use the following credentials:
 The GUI is straightforward:
 - Entities are displayed on the main page.
 - Clicking an entity shows existing data with options to create, modify, or delete.
-- The "Actions" button offers advanced functionalities such as creating charts, grouping, filtering, computing, sorting, aggregating, and more.
+- The "Actions" button offers advanced functionalities such as creating charts,
+   grouping, filtering, computing, sorting, aggregating, and more.
 
 ## Contributing
 
