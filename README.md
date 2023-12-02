@@ -13,9 +13,8 @@ This application provides a user-friendly interface to interact with your databa
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Accessing the GUI](#accessing-the-gui)
-- [Usage](#usage)
-  - [Signing In](#signing-in)
-  - [Functionality Overview](#functionality-overview)
+- [Signing In](#signing-in)
+- [Functionality Overview](#functionality-overview)
 - [Contributing](#contributing)
 - [License](#license)
 
