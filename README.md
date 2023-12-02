@@ -65,3 +65,5 @@ Contributions to this project were made by:
 This project does not require a license.
 
 ```
+ER Diagram:
+![image](https://github.com/theghora/CPS510_Patient_DBMS/assets/114173216/2ea511fc-6aae-4aa8-b0fe-36d92fe0069e)
