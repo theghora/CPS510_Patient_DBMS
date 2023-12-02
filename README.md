@@ -64,5 +64,3 @@ Contributions to this project were made by:
 This project does not require a license.
 
 ```
-
-Feel free to further customize the README if needed. The information provided should give users a clear understanding of how to access and use your GUI.
