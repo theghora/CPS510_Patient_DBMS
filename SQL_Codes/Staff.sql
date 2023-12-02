@@ -1,0 +1,60 @@
+--------------------------------------------------------
+--  File created - Saturday-December-02-2023   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table STAFF
+--------------------------------------------------------
+
+  CREATE TABLE "STAFF" 
+   (	"EMPLOYEEID" VARCHAR2(20 BYTE), 
+	"DEPARTMENT" VARCHAR2(20 BYTE), 
+	"HOSPITALID" VARCHAR2(20 BYTE), 
+	"NAME" VARCHAR2(20 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DBCOURSE" ;
+REM INSERTING into STAFF
+SET DEFINE OFF;
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP001','Doctor','B2C3E4g5','John Brown');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP002','Doctor','B2C3E4g5','Jane Johnson');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP003','Doctor','B2C3E4g5','Michael Smith');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP004','Doctor','B2C3E4g5','Emily Williams');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP005','Doctor','B2C3E4g5','James Davis');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP006','Nurse','B2C3E4g5','Aisha Patel');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP007','Nurse','B2C3E4g5','David Taylor');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP008','Nurse','B2C3E4g5','Priya Gupta');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP009','Nurse','B2C3E4g5','Daniel Wilson');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP010','Nurse','B2C3E4g5','Mei Chen');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP011','Maintenance','B2C3E4g5','John Doe');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP012','Maintenance','B2C3E4g5','Jane Smith');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP013','Maintenance','B2C3E4g5','Michael Johnson');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP014','Maintenance','B2C3E4g5','Emily Davis');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP015','Maintenance','B2C3E4g5','James Wilson');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP016','Nurse','B2C3E4g5','Kartike khan');
+Insert into STAFF (EMPLOYEEID,DEPARTMENT,HOSPITALID,NAME) values ('EMP017','Maintenance','B2C3E4g5','Raza Khan');
+--------------------------------------------------------
+--  DDL for Index SYS_C001840577
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C001840577" ON "STAFF" ("EMPLOYEEID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DBCOURSE" ;
+--------------------------------------------------------
+--  Constraints for Table STAFF
+--------------------------------------------------------
+
+  ALTER TABLE "STAFF" ADD PRIMARY KEY ("EMPLOYEEID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "DBCOURSE"  ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table STAFF
+--------------------------------------------------------
+
+  ALTER TABLE "STAFF" ADD CONSTRAINT "STAFF_FK1" FOREIGN KEY ("HOSPITALID")
+	  REFERENCES "HOSPITAL" ("HOSPITALID") ENABLE;
